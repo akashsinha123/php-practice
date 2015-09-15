@@ -1,0 +1,7 @@
+# deny everyone but myself
+<Limit GET POST PUT>
+	order deny,allow
+	deny from all
+	allow from ::1
+	allow from 106.51.245.22
+</Limit>
